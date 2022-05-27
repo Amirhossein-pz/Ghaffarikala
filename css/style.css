@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@font-face {
+  font-family: Sahel;
+  src: url("../fonts/Sahel.eot");
+  src: url("../fonts/Sahel.ttf");
+  src: url("../fonts/Sahel.woff");
+  src: url("../fonts/Sahel.woff2");
+}
+
+@font-face {
+  font-family: "B Titr";
+  src: url("/fonts/BTitrBd.ttf");
+}
+
+@font-face {
+  font-family: "kohinoor";
+  src: url("/fonts/Kohinoor.Arabic.Medium.TTF");
+}
+
+body {
+  overflow-x: hidden !important;
+  font-family: kohinoor;
+}
+
+a {
+  text-shadow: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar-brand {
+  font-family: B Titr !important;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+}
+
+.navbar .nav-link {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+  border-right: #aed6f1 3px solid;
+}
+.navbar .nav-item.active a {
+  color: #3292a6 !important;
+  font-weight: bolder;
+}
+
+nav a {
+  font-weight: bold;
+}
+
+/* Align dropdown icon */
+#navbarDropdownMenuLink {
+  flex-direction: row-reverse;
+}
+#navbarDropdownMenuLink:after {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Products dropdown */
+#products-dropdown li a:hover {
+  background: #3292a6;
+  color: #fff !important;
+}
+
+.carousel-item:before {
+  background: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-image-1 {
+  background: url("../img/image1.jpg");
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url("../img/image2.jpg");
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url("../img/image3.jpg");
+  background-size: cover;
+}
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/lights.jpg");
+  background-position: 0 -600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/media.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+#video-play a {
+  color: #fff;
+}
+
+#page-header:before {
+  background: url("../img/page-header.jpg");
+  background-attachment: fixed;
+  background-position: 0 -390px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+}
+
+#page-header {
+  background: rgba(51, 51, 51, 0.2);
+  position: relative;
+  height: 200px;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+.about-img {
+  margin-top: -50px;
+}
+
+#faq .card {
+  border: #444;
+}
+
+#faq a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+}
+
+#article-footer a i:hover {
+  color: #333 !important;
+}
+
+/* alignment for persian text */
+.text-pr {
+  direction: rtl;
+}
+
+/* english font */
+.en-font {
+  font-family: "Roboto", sans-serif;
+}
+
+/* custome p style */
+.p-special {
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Responsive for smaller screen devices */
+@media (max-width: 1000px) {
+  #home-heading h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 990px) {
+  .navbar .nav-link {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  #showcase .carousel-inner h1 {
+    font-size: 2.5rem;
+  }
+}
+
+#home-heading h1 {
+  margin-top: 1.2rem;
+  font-size: 1.5rem;
+}
+#info .btn {
+  margin-bottom: 1rem;
+}
+#video-play h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+  nav img {
+    width: 5rem;
+    height: 4rem;
+  }
+  nav .navbar-brand {
+    font-size: 1.4rem;
+  }
+  .carousel-image-1 {
+    background: url("/img/image1_sm.jpg");
+    background-size: cover;
+  }
+  .carousel-image-2 {
+    background: url("/img/image2_sm.jpg");
+    background-size: cover;
+  }
+  .carousel-image-3 {
+    background: url("/img/image3_sm.jpg");
+    background-size: cover;
+  }
+  #gallery a img {
+    margin-bottom: 1rem;
+  }
+}
